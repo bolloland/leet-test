@@ -3,5 +3,5 @@
  * @return {boolean}
  */
 
-var isPalindrome = (x) => x == x.toString().split("").reverse().join("")
+var isPalindrome = x => x == x.toString().split("").reverse().join("")
    
