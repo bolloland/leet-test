@@ -12,19 +12,14 @@ var romanToInt = function(s) {
         "D": 500,
         "M": 1000
     }
-    // console.log(romanMap)
     let total = 0
 //     III  LVIII   MCMXCIV
     for (i = 0; i < s.length; i++) {  
         
      if (romanMap[s[i]] < romanMap[s[i+1]]) {
-         // console.log(s, romanMap[s[i]], "first", romanMap[s[i+1]], "second", total, "new total")
-         console.log(romanMap[s[i+1]] - romanMap[s[i]])
         total = total - romanMap[s[i]]
-         console.log(total, "new total")
      } else  {
          total = total + romanMap[s[i]]
-         console.log(total, "new else total")
      }
     }
     return total
