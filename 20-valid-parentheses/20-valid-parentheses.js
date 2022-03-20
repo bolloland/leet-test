@@ -5,8 +5,10 @@
 
 let isValid = function(s) {
  const stack = []
- for (i = 0; i < s.length; i++) {
+ 
+ for (i=0; i<s.length; i++) {
    let curChar = s[i]
+   
    switch(curChar) {
      case '(': stack.push(")");
        break;
@@ -16,7 +18,6 @@ let isValid = function(s) {
        break;
      default:
        topElement = stack.pop()
-           console.log(stack, "after breaks or pop")
        if (curChar !== topElement) return false  
    }
  }
