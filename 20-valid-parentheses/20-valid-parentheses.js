@@ -8,20 +8,16 @@ let isValid = function(s) {
  
  for (i = 0; i < s.length; i++) {
    let curChar = s[i]
-    console.log(curChar, "curChar")
    switch(curChar) {
      case '(': stack.push(")");
-           console.log(stack, ")")
        break;
      case '[': stack.push("]");
-           console.log(stack, "]")
        break;
      case '{': stack.push("}");
-           console.log(stack, "}")
        break;
      default:
        topElement = stack.pop()
-           console.log(stack, "after breaks or pop")///removes last element and returns array
+           console.log(stack, "after breaks or pop")
        if (curChar !== topElement) return false  
    }
  }
