@@ -13,13 +13,12 @@ var romanToInt = function(s) {
         "M": 1000
     }
     let total = 0
-//     III  LVIII   MCMXCIV
     for (i = 0; i < s.length; i++) {  
         
      if (romanMap[s[i]] < romanMap[s[i+1]]) {
-        total = total - romanMap[s[i]]
+        total = total - romanMap[s[i]] //less than? subtract it
      } else  {
-         total = total + romanMap[s[i]]
+         total = total + romanMap[s[i]] //more than? add it
      }
     }
     return total
