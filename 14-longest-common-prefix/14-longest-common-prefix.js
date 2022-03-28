@@ -4,7 +4,7 @@
  */
 var longestCommonPrefix = function(strs) {
     if (strs.length == 1) return strs[0]
-    if (strs[0].length == 0 || strs == null || strs.length == 0) return ""
+    if (strs == null || strs.length == 0) return ""
   
       let string = ""
       let smallest = strs.reduce((a, b) => a.length <= b.length ? a : b).split("")
