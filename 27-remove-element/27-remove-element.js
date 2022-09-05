@@ -10,7 +10,6 @@ var removeElement = function(nums, val) {
             nums[counter] = nums[i]
             counter++
         }
-   
 }
      return counter
 }
