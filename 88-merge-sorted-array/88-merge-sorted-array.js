@@ -10,10 +10,8 @@ var merge = function(nums1, m, nums2, n) {
       nums1.unshift(nums2[0])
       nums1.pop()
       nums2.shift()
-      console.log(nums1)
   }
     nums1.sort((a, b) => a-b)
-    console.log(nums1, "sorted")
 };
 
 
